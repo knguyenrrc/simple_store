@@ -1,8 +1,6 @@
-<h1>All Products</h1>
+<h1>All Products:</h1>
 <ul>
   <% @products.each do |p| %>
-    <div><li>Product: <%= p.title %> </li>
-        <li>Price: <%= p.price %> </li>
-        <li>Stock quantity: <%= p.stock_quantity %> </li> </div> <br>
+    <li><%= p.title %></li>
   <% end %>
 </ul>
